@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pageConexion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.fxml.controllers.FXMLPageConnexionController">
+    <children>
+        <BorderPane layoutY="-1.0" prefHeight="531.0" prefWidth="848.0">
+            <top>
+                <FlowPane alignment="CENTER" prefHeight="95.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane opacity="0.71" prefHeight="112.0" prefWidth="171.0" style="-fx-background-color: white;">
+                            <children>
+                                <ImageView fx:id="imgIcone" fitHeight="60.0" fitWidth="165.0" layoutX="2.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <viewport>
+                                        <Rectangle2D />
+                                    </viewport>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="enteteFenetreAdministration" prefHeight="112.0" prefWidth="667.0" style="-fx-background-color: black;">
+                     <children>
+                        <Text fx:id="txtTitre" layoutX="90.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wemanity" wrappingWidth="602.13671875" />
+                     </children></Pane>
+                    </children>
+                </FlowPane>
+            </top>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <bottom>
+            <Pane prefHeight="439.0" prefWidth="838.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="-3.0" prefHeight="45.0" prefWidth="842.0" style="-fx-background-color: brown;">
+                     <children>
+                        <Label layoutX="20.0" layoutY="10.0" prefHeight="23.0" prefWidth="225.0" text="ADMINISTRATION" textFill="WHITE">
+                           <font>
+                              <Font name="Perpetua Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" layoutX="601.0" layoutY="23.0" prefHeight="17.0" prefWidth="234.0" text="Administrateur" textFill="#d3b0b0" visible="false">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="lblAuth" layoutX="69.0" layoutY="71.0" prefHeight="56.0" prefWidth="662.0" text="Authentification                   ">
+                     <font>
+                        <Font name="Albertus Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Line endX="600.0" layoutX="169.0" layoutY="127.0" startX="-100.0" strokeWidth="3.0" />
+                  <JFXButton fx:id="btnValider" layoutX="457.0" layoutY="319.0" onAction="#btnValiderAction" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: blue;" text="Valider" textFill="WHITE">
+                     <font>
+                        <Font name="Albertus Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="txtLogin" focusColor="#0b6121" labelFloat="true" layoutX="298.0" layoutY="174.0" prefHeight="29.0" prefWidth="278.0" promptText="Login" unFocusColor="#0b0b61">
+                     <font>
+                        <Font name="Albertus Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txtMdp" focusColor="#0b6121" labelFloat="true" layoutX="298.0" layoutY="236.0" prefHeight="29.0" prefWidth="278.0" promptText="Mot de passe" unFocusColor="#0b0b61">
+                     <font>
+                        <Font name="Albertus Bold" size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <ImageView fx:id="imgUser" fitHeight="76.0" fitWidth="98.0" layoutX="151.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" />
+                  <Text fx:id="txtMessage" layoutX="20.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </bottom>
+        </BorderPane>
+    </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+</AnchorPane>
